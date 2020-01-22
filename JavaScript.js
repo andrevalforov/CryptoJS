@@ -1,0 +1,1 @@
+﻿let src = 'https://poloniex.com/public?command=returnCurrencies';
