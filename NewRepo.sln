@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "NewRepo", ".", "{6EB2E283-ACA0-4A2C-9B9D-CFE68F0AD7FE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49864"
+		Debug.AspNetCompiler.PhysicalPath = "..\NewRepo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49864\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49864"
+		Release.AspNetCompiler.PhysicalPath = "..\NewRepo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49864\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49864"
+		SlnRelativePath = "..\NewRepo\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EB2E283-ACA0-4A2C-9B9D-CFE68F0AD7FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB2E283-ACA0-4A2C-9B9D-CFE68F0AD7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1501F0CC-5CBA-479D-831A-A4A1BF8467B4}
+	EndGlobalSection
+EndGlobal

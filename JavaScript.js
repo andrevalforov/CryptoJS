@@ -1,28 +1,23 @@
-﻿let src = 'https://poloniex.com/public?command=returnCurrencies';
-
-function json2table(json, classes) {
-    var cols = Object.keys(json[0]);
-    var headerRow = '';
-    var bodyRows = '';
-    classes = classes || '';
-    cols.map(function (col) {
-        headerRow += '<th>' + col + '</th>';
+﻿$(document).ready(function () {
+    $.getJSON('https://poloniex.com/public?command=returnCurrencies', function (data) {
+        let cryptodata = '';
+        let id = 1;
+        $.each(data, function (key, value) {
+            cryptodata += '<tr>';
+            cryptodata += '<td>' + (id++) + '</td>';
+            cryptodata += '<td>' + value.name + '</td>';
+            cryptodata += '<td>' + value.humanType + '</td>';
+            cryptodata += '<td>' + value.currencyType + '</td>';
+            cryptodata += '<td>' + value.txFee + '</td>';
+            cryptodata += '<td>' + value.minConf + '</td>';
+            cryptodata += '<td><button onclick="deleteRow(this)">Delete this</button></td>';
+            cryptodata += '</tr>';
+        });
+        $('#maintb').append(cryptodata);
     });
-    json.map(function (row) {
-        bodyRows += '<tr>';
+});
 
-        cols.map(function (colname) {
-            bodyRows += '<td>' + row[colname] + '</td>';
-        })
-
-        bodyRows += '</tr>';
-    });
-
-    return '<table class="' + classes + '"><thead><tr>' + headerRow + '</tr></thead><tbody>' + bodyRows + '</tbody></table>';
-
-    var defaultData = [
-        name: '1',
-        humanType: '2',
-
-    ]
+function deleteRow(btn) {
+    var row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
 }
