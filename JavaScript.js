@@ -25,7 +25,6 @@ function deleteRow(btn) {
 $(document).ready(function () {
     $("#searchbar").on("keyup", function () {
         let value = $(this).val().toLowerCase();
-        //alert($(this).data());
         $("#maintb tbody tr").filter(function () {
             $(this).toggle($(this).find('td:eq(1)').text().toLowerCase().indexOf(value) > -1)
         });
